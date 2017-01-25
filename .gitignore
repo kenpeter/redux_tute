@@ -1,4 +1,8 @@
 p1_index/node_modules
 p1_index/*.log
 
+p2_proj/node_modules
+p2_proj/*.log
 
+p3_hotload/node_modules
+p3_hotload/*.log
