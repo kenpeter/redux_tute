@@ -6,3 +6,9 @@ p2_proj/*.log
 
 p3_hotload/node_modules
 p3_hotload/*.log
+
+p4_router/node_modules
+p4_router/*.log
+
+p5_signup/node_modules
+p5_signup/*.log
