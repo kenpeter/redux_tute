@@ -12,3 +12,9 @@ p4_router/*.log
 
 p5_signup/node_modules
 p5_signup/*.log
+
+p6_redux/node_modules
+p6_redux/*.log
+
+p7_user_signup/node_modules
+p7_user_signup/*.log
