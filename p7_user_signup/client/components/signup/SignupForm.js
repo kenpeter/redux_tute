@@ -23,7 +23,8 @@ class SignupForm extends React.Component {
       password: "",
       passwordConfirm: "",
       timezone: "",
-      errors: {}
+      errors: {},
+      isLoading: false
     } // no semi column
     
     // this on change = assign 
@@ -50,7 +51,7 @@ class SignupForm extends React.Component {
     e.preventDefault();
   
     // we clear up the error, every time we submit
-    this.setState({ errors: {} });
+    this.setState({ errors: {}, isLoading: true});
   
     //console.log(this.state);
     
@@ -58,12 +59,14 @@ class SignupForm extends React.Component {
     // so it can use .then
     // axios.post("/api/users", userData).then.....
     this.props.userSignupRequest(this.state).then(
+      // all good do something
       () => {
       
         //test
         console.log("-- onSubmit, form post good --");
+        this.setState({ isLoading: false }) ;
         
-      }, // all good do something
+      }, 
       
       // data is error
       // inside an object
@@ -73,7 +76,7 @@ class SignupForm extends React.Component {
         console.log("-- onSubmit, form post bad, what is state then --");  
         console.log(this.state);
    
-        this.setState({ errors: err.response.data }) ;
+        this.setState({ errors: err.response.data, isLoading: false });
              
       }
     );
@@ -182,9 +185,10 @@ class SignupForm extends React.Component {
            {errors.timezone && <span className="help-block">{errors.timezone}</span>}
         </div>
         
+        
         {/* submit button */}
         <div className="form-group">
-          <button className="btn btn-primary btn-lg">
+          <button  disabled={this.state.isLoading}  className="btn btn-primary btn-lg">
             Sign up
           </button>
         </div>
