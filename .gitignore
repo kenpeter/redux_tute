@@ -21,3 +21,6 @@ p7_user_signup/*.log
 
 p8_client_vali/node_modules
 p8_client_vali/*.log
+
+p9_redirect/node_modules
+p9_redirect/*.log
