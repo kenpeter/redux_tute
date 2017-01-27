@@ -7,12 +7,18 @@ import webpackMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 import webpackConfig from '../webpack.config.dev';
 
+import users from "./routes/users";
+
 // express app
 let app = express();
 
 // app use
 // body parser json
 app.use(bodyParser.json());
+
+// app use route, then passed in route
+// but it doesn't show put, delete, get or post
+app.use("/api/users", users);
 
 // webpack config passed to webpack
 const compiler = webpack(webpackConfig);
