@@ -30,3 +30,9 @@ p10_flash/*.log
 
 p11_flash1/node_modules
 ip11_flash1/*.log
+
+p12_db/node_modules
+p12_db/*.log
+
+p13_signup/node_modules
+p13_signup/*.log
