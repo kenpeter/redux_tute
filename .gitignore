@@ -24,3 +24,9 @@ p8_client_vali/*.log
 
 p9_redirect/node_modules
 p9_redirect/*.log
+
+p10_flash/node_modules
+p10_flash/*.log
+
+p11_flash1/node_modules
+ip11_flash1/*.log
