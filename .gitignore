@@ -36,3 +36,6 @@ p12_db/*.log
 
 p13_signup/node_modules
 p13_signup/*.log
+
+p14_unique/node_modules
+p14_unique/*.log
