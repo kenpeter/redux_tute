@@ -46,3 +46,27 @@ export function login(data) {
 }
 
 
+export function logout() {
+  return dispatch => {
+    // no return
+    console.log("--- in authAction.js, logout ------");
+
+    // remove local storage
+    localStorage.removeItem('jwtToken');
+      
+    setAuthorizationToken(false);
+  
+    /*
+      return {
+        isAuthenticated: !isEmpty(action.user), // not empty user, then authed.
+        user: action.user // {id: xxx, username: a, iat: xxxxxx}
+      }
+    */  
+    dispatch( setCurrentUser({}) );
+  };
+
+  
+      
+      
+}
+
