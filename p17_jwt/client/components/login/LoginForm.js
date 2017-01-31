@@ -65,8 +65,8 @@ class LoginForm extends React.Component {
         (res) => {
           
           //test
-          console.log("--- in onSubmit(e) -----");
-          console.log(res.data);
+          //console.log("--- in onSubmit(e) -----");
+          //console.log(res.data);
           
           this.context.router.push('/');
         },

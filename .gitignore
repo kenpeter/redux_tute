@@ -45,3 +45,6 @@ p15_login/*.log
 
 p16_verify/node_modules
 p16_verify/*.log
+
+p17_jwt/node_modules
+p17_jwt/*.log
