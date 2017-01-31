@@ -39,3 +39,9 @@ p13_signup/*.log
 
 p14_unique/node_modules
 p14_unique/*.log
+
+p15_login/node_modules
+p15_login/*.log
+
+p16_verify/node_modules
+p16_verify/*.log
