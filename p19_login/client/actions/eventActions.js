@@ -1,10 +1,13 @@
-import { CREATE_EVENT } from "./types";
+import axios from "axios";
 
-export function createEvent(data) {
-  
-  return { 
-    type: CREATE_EVENT, 
-    "data": data
-  }
+export function createEvent(event) {
+  // dispatch
+  return dispatch => {
+    // axios post
+    // api url
+    // event
+    return axios.post("/api/events", event);
+  };
 }
+
 

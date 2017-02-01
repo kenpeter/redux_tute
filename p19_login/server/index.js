@@ -9,6 +9,7 @@ import webpackConfig from '../webpack.config.dev';
 
 import users from "./routes/users";
 import auth from "./routes/auth";
+import events from "./routes/events";
 
 // express app
 let app = express();
@@ -23,6 +24,10 @@ app.use("/api/users", users);
 
 //
 app.use("/api/auth", auth);
+
+//
+app.use("/api/events", events);
+
 
 // webpack config passed to webpack
 const compiler = webpack(webpackConfig);
