@@ -48,3 +48,6 @@ p16_verify/*.log
 
 p17_jwt/node_modules
 p17_jwt/*.log
+
+p19_login/node_modules
+p19_login/*.log
