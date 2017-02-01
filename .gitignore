@@ -52,5 +52,10 @@ p17_jwt/*.log
 p19_login/node_modules
 p19_login/*.log
 
+
 p19_1_jwt/node_modules
 p19_1_jwt/*.log
+
+
+p20_higher_order/node_modules
+p20_higher_order/*.log
