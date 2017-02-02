@@ -59,3 +59,10 @@ p19_1_jwt/*.log
 
 p20_higher_order/node_modules
 p20_higher_order/*.log
+
+
+p21_migrate/alclient/node_modules
+p21_migrate/alclient/*.log
+
+p21_migrate/alserver/node_modules
+p21_migrate/alserver/*.log
